@@ -33,5 +33,5 @@ Projeto ainda está em andamento
     ```
 
 # Análises iniciais 
-![](assert\KPI's_iniciais.png)
-![](assert\análise_por_marca.png)
+![](assert/KPI's_iniciais.png)
+![](assert/análise_por_marca.png)
