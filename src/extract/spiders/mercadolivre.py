@@ -22,7 +22,7 @@ class AmazonSpider(scrapy.Spider):
                 'new_price_reais': price[1] if len(price) > 1 else None,
                 'new_cents': cents[1] if len(cents) > 1 else None,
                 'title': product.css('h2.poly-box.poly-component__title a::text').get(),
-                'rating_num': product.css('span.poly-reviews__rating::text').get()
+                'rating_num': response.xpath('//span[@class="poly-reviews__rating"]/text()').get()
             }
 
         if self.page_count < self.max_pages:
